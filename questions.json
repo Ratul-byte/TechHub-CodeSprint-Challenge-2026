@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "question": "In transformer-based text classification papers, what specific fine-tuning methods are used for sentiment or topic classification?",
+    "category_filter": "cs.CL",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "transformer", "bert", "fine-tuning", "sentiment", "topic",
+        "classification", "pretrained", "attention", "encoder", "embedding"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 2,
+    "question": "What specific regularization methods are used to reduce overfitting in deep learning classification papers?",
+    "category_filter": null,
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "dropout", "weight decay", "early stopping", "data augmentation",
+        "batch normalization", "regularization", "cross-validation", "generalization"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 3,
+    "question": "In reinforcement learning papers, what tasks are discussed for robotics or control problems?",
+    "category_filter": "cs.LG",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "reward", "policy", "robot", "control", "environment",
+        "agent", "trajectory", "action", "state", "autonomous"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 4,
+    "question": "Which benchmark datasets are most often used in computer vision papers on detection or segmentation?",
+    "category_filter": "cs.CV",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "imagenet", "coco", "cityscapes", "voc", "detection",
+        "segmentation", "benchmark", "dataset", "recognition"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 5,
+    "question": "What uncertainty quantification methods are discussed in probabilistic machine learning papers?",
+    "category_filter": "stat.ML",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "bayesian", "posterior", "calibration", "ensemble", "monte carlo",
+        "uncertainty", "probabilistic", "variance", "confidence", "distribution"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 6,
+    "question": "In cs.AI papers from 2023, what themes appear around planning, agents, and tool use?",
+    "category_filter": "cs.AI",
+    "year_filter": "2023",
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "agent", "planning", "tool use", "reasoning", "llm",
+        "foundation model", "workflow", "decision", "action", "alignment"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 7,
+    "question": "Which evaluation metrics are used in NLP papers for classification and text generation tasks?",
+    "category_filter": "cs.CL",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "accuracy", "f1", "precision", "recall", "bleu",
+        "rouge", "perplexity", "exact match", "evaluation", "metric"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 8,
+    "question": "What model families dominate cs.CV papers from 2022 on vision transformers and diffusion models?",
+    "category_filter": "cs.CV",
+    "year_filter": "2022",
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "vision transformer", "diffusion", "cnn", "resnet", "backbone",
+        "attention", "detection", "segmentation", "classifier"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 9,
+    "question": "What train-validation-test splitting and cross-validation practices are described in machine learning methodology papers?",
+    "category_filter": "cs.LG",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "train", "validation", "test", "cross-validation", "holdout",
+        "split", "fold", "stratified", "reproducibility", "benchmark"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 10,
+    "question": "Which Bayesian and ensemble uncertainty methods appear in stat.ML papers from 2021?",
+    "category_filter": "stat.ML",
+    "year_filter": "2021",
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "bayesian", "posterior", "ensemble", "dropout", "calibration",
+        "monte carlo", "variance", "confidence", "epistemic", "credible interval"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 11,
+    "question": "What optimization algorithms are most common in recent deep learning training papers?",
+    "category_filter": null,
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "adam", "sgd", "adamw", "optimizer", "learning rate",
+        "scheduler", "momentum", "weight decay", "gradient", "training"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 12,
+    "question": "What NLP tasks are most discussed in cs.CL papers on translation, summarization, and question answering?",
+    "category_filter": "cs.CL",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "translation", "summarization", "question answering", "retrieval",
+        "generation", "dialogue", "classification", "information extraction", "reasoning"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 13,
+    "question": "What dataset and benchmark trends appear in cs.CV papers about recognition and detection?",
+    "category_filter": "cs.CV",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "benchmark", "dataset", "imagenet", "coco", "cityscapes",
+        "leaderboard", "evaluation", "segmentation", "detection", "classification"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 14,
+    "question": "What robustness and distribution-shift issues are discussed in machine learning generalization papers?",
+    "category_filter": "cs.LG",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "robust", "distribution shift", "ood", "adversarial", "generalization",
+        "domain adaptation", "noise", "calibration", "stability", "drift"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 15,
+    "question": "What techniques are used for model efficiency, compression, and parameter reduction?",
+    "category_filter": null,
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "pruning", "quantization", "distillation", "compression", "efficient",
+        "low-rank", "adapter", "lora", "parameter-efficient", "latency"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 16,
+    "question": "Which reinforcement learning components are emphasized in cs.LG papers from 2022?",
+    "category_filter": "cs.LG",
+    "year_filter": "2022",
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "policy", "reward", "value", "actor", "critic",
+        "exploration", "environment", "trajectory", "q-learning", "ppo"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 17,
+    "question": "What publication metadata signals indicate whether a paper is published or still a preprint?",
+    "category_filter": null,
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "doi", "journal", "published", "preprint", "conference",
+        "version", "revision", "citation", "metadata", "peer review"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 18,
+    "question": "For cs.AI papers, what application domains are frequently mentioned in decision support, dialogue, or robotics?",
+    "category_filter": "cs.AI",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "healthcare", "robotics", "planning", "recommendation", "dialogue",
+        "knowledge graph", "autonomous", "decision support", "vision", "language"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 19,
+    "question": "What multimodal research themes appear in 2023 papers on vision-language and video modeling?",
+    "category_filter": null,
+    "year_filter": "2023",
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "multimodal", "vision-language", "fusion", "alignment", "cross-modal",
+        "retrieval", "captioning", "video", "audio", "llm"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 20,
+    "question": "Which techniques are used to improve factuality, retrieval grounding, and hallucination control in language model papers?",
+    "category_filter": "cs.CL",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "retrieval", "rag", "grounding", "citation", "evidence",
+        "knowledge base", "verification", "hallucination", "factual", "context"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 21,
+    "question": "In one or two sentences, what fairness and bias mitigation techniques appear in AI decision-support papers?",
+    "category_filter": "cs.AI",
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "fairness", "bias", "debias", "equalized odds", "demographic parity",
+        "mitigation", "ethics", "audit", "sensitive attribute", "robustness"
+      ],
+      "min_keyword_hits": 2
+    }
+  },
+  {
+    "id": 22,
+    "question": "What reproducibility details are frequently reported in machine learning experiments?",
+    "category_filter": null,
+    "year_filter": null,
+    "grading": {
+      "type": "keyword_match",
+      "must_contain_any": [
+        "seed", "hyperparameter", "ablation", "code", "dataset split",
+        "training setup", "implementation", "baseline", "evaluation protocol", "reproducibility"
+      ],
+      "min_keyword_hits": 2
+    }
+  }
+]
