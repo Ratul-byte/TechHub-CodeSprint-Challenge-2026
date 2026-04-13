@@ -6,7 +6,9 @@ This project is a **Retrieval-Augmented Generation (RAG) pipeline** built over a
 
 The system ingests arXiv paper metadata from a CSV snapshot, stores it in SQLite, builds a vector index for semantic search, and exposes a REST API to query papers by natural language questions. It also includes visualization utilities and a batch question-answering runner.
 
-![CodeSprint Certificate](CodeSprint%20Certificate.jpeg)
+<p align="center">
+  <img src="CodeSprint%20Certificate.jpeg" width="750">
+</p>
 
 ---
 
