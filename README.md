@@ -43,8 +43,8 @@ The system ingests arXiv paper metadata from a CSV snapshot, stores it in SQLite
 - **Data ingestion**: Load arXiv paper metadata from CSV, filter by category, and persist to SQLite and JSON.
 - **Data cleaning**: Deduplicate papers, extract submission year, count authors, compute abstract word counts, and classify publication status via a single SQL script.
 - **RAG pipeline**: Chunk paper abstracts and embed them into a ChromaDB vector store. Supports two embedding backends:
-  - `local` — [sentence-transformers](https://www.sbert.net/) (runs fully offline)
-  - `openrouter` — [OpenRouter](https://openrouter.ai/) API (e.g., `nomic-ai/nomic-embed-text-v1.5`)
+  - `local` — [sentence-transformers](https://www.sbert.net/) (work in progress)
+  - `openrouter` — [OpenRouter](https://openrouter.ai/) API (e.g., `sentence-transformers/all-minilm-l12-v2`)
 - **REST API**: FastAPI server with endpoints to list papers, run semantic queries, and check system health.
 - **Batch Q&A**: Run a list of natural-language questions against the pipeline and save structured answers to `answer.json`.
 - **Visualizations**: Generate four matplotlib charts summarising the dataset.
@@ -69,7 +69,6 @@ For **local embeddings**, no additional setup is needed — the model is downloa
 For **OpenRouter embeddings**, create a `.env` file in the project root with your API key:
 
 ```bash
-cp .env.example .env
 # Edit .env and add your API key:
 # OPENROUTER_API_KEY="your-key-here"
 ```
@@ -121,12 +120,6 @@ Set `AUTO_BUILD_INDEX=true` to build the vector index automatically on startup:
 
 ```bash
 AUTO_BUILD_INDEX=true uvicorn server:app --host 0.0.0.0 --port 8000
-```
-
-Override the embedding backend or model with environment variables:
-
-```bash
-EMBEDDING_BACKEND=local LOCAL_EMBED_MODEL=sentence-transformers/all-minilm-l6-v2 uvicorn server:app
 ```
 
 #### API Endpoints
@@ -181,7 +174,7 @@ Use `--rebuild-clean` to re-run `clean.sql` automatically if the cleaned tables 
 | `OPENROUTER_API_KEY` | — | **Required for OpenRouter backend.** API key from [openrouter.ai](https://openrouter.ai/) |
 | `EMBEDDING_BACKEND` | `openrouter` | Embedding backend: `local` (offline) or `openrouter` (API-based) |
 | `LOCAL_EMBED_MODEL` | `sentence-transformers/all-minilm-l6-v2` | HuggingFace model ID for local embeddings |
-| `OPENROUTER_EMBED_MODEL` | `text-embedding-3-small` | OpenRouter embedding model ID |
+| `OPENROUTER_EMBED_MODEL` | `sentence-transformers/all-minilm-l12-v2` | OpenRouter embedding model ID |
 | `AUTO_BUILD_INDEX` | `false` | Auto-build vector index on API startup (can be slow) |
 
 ### Using .env File
@@ -191,7 +184,7 @@ Create a `.env` file in the project root (see `.env.example`):
 ```bash
 OPENROUTER_API_KEY=sk-...
 EMBEDDING_BACKEND=openrouter
-OPENROUTER_EMBED_MODEL=text-embedding-3-small
+OPENROUTER_EMBED_MODEL=sentence-transformers/all-minilm-l12-v2
 AUTO_BUILD_INDEX=false
 ```
 
