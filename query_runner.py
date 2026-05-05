@@ -7,7 +7,7 @@ from rag_pipeline import RAGPipeline
 
 INPUT_FILE = Path("questions.json")
 OUTPUT_FILE = Path("answer.json")
-OPENROUTER_MODEL = os.getenv("OPENROUTER_EMBED_MODEL", "sentence-transformers/all-minilm-l6-v2")
+OPENROUTER_MODEL = os.getenv("OPENROUTER_EMBED_MODEL", "text-embedding-3-small")
 TOP_K = 8
 
 
@@ -77,6 +77,17 @@ def _format_answer(items: list[dict[str, Any]], max_points: int = 3) -> str:
     return " ".join(parts)
 
 
+def _render_progress(prefix: str, done: int, total: int, width: int = 30) -> None:
+    total = max(total, 1)
+    done = max(0, min(done, total))
+    filled = int(width * done / total)
+    bar = "#" * filled + "-" * (width - filled)
+    pct = int(100 * done / total)
+    print(f"\r{prefix} [{bar}] {done}/{total} ({pct}%)", end="", flush=True)
+    if done == total:
+        print()
+
+
 def run() -> None:
     questions = json.loads(INPUT_FILE.read_text(encoding="utf-8"))
 
@@ -98,14 +109,21 @@ def run() -> None:
     )
 
     if pipeline.index_size() == 0:
-        info = pipeline.build_index(reset=False)
+        print("Building vector index...")
+        info = pipeline.build_index(
+            reset=False,
+            progress_callback=lambda done, total: _render_progress("Indexing", done, total),
+        )
         print(f"Built index: {info}")
     else:
         print(f"Using existing index chunks: {pipeline.index_size()} (model={OPENROUTER_MODEL})")
 
     answers: list[dict[str, Any]] = []
 
-    for q in questions:
+    total_questions = len(questions)
+    _render_progress("Questions", 0, total_questions)
+
+    for idx, q in enumerate(questions, start=1):
         qid = q.get("id")
         question = str(q.get("question", "")).strip()
         category_filter = q.get("category_filter")
@@ -141,6 +159,7 @@ def run() -> None:
             }
         )
 
+        _render_progress("Questions", idx, total_questions)
         print(f"Processed question {qid}")
 
     OUTPUT_FILE.write_text(json.dumps(answers, indent=2, ensure_ascii=False), encoding="utf-8")

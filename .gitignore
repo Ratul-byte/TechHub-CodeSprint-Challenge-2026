@@ -1,0 +1,9 @@
+.env
+vector_store/
+__pycache__/
+*.pyc
+arxiv-metadata-oai-snapshot.json
+sampled-arxiv-metadata-oai-snapshot.csv
+data/arxiv.db
+data/papers_raw.json
+.venv/

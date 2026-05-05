@@ -5,10 +5,14 @@ import hashlib
 import math
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
+
+from dotenv import load_dotenv
 
 import chromadb
 import requests
+
+load_dotenv()
 
 
 @dataclass
@@ -32,7 +36,7 @@ class RAGPipeline:
         chunk_overlap: int = 40,
         embedding_backend: str = "local",
         local_model_name: str = "sentence-transformers/all-minilm-l6-v2",
-        openrouter_model: str = "text-embedding-3-small",
+        openrouter_model: str = "sentence-transformers/all-minilm-l12-v2",
         openrouter_base_url: str = "https://openrouter.ai/api/v1",
         openrouter_api_key: str | None = None,
     ) -> None:
@@ -201,6 +205,11 @@ class RAGPipeline:
                 raise RuntimeError(
                     f"OpenRouter embedding request failed after retries at batch starting index {i}."
                 ) from last_error
+            if len(data) != len(batch):
+                raise RuntimeError(
+                    f"OpenRouter returned {len(data)} embeddings for a batch of {len(batch)} "
+                    f"(model={self.openrouter_model}, batch_start={i})."
+                )
             data = sorted(data, key=lambda item: item.get("index", 0))
             vectors.extend([item["embedding"] for item in data])
         return vectors
@@ -222,7 +231,11 @@ class RAGPipeline:
             metadata={"hnsw:space": "cosine"},
         )
 
-    def build_index(self, reset: bool = False) -> dict[str, int]:
+    def build_index(
+        self,
+        reset: bool = False,
+        progress_callback: Callable[[int, int], None] | None = None,
+    ) -> dict[str, int]:
         if reset:
             self.clear_index()
 
@@ -252,6 +265,7 @@ class RAGPipeline:
             return {"papers": 0, "chunks": 0}
 
         batch_size = 256
+        total_batches = (len(ids) + batch_size - 1) // batch_size
         for i in range(0, len(ids), batch_size):
             batch_docs = docs[i : i + batch_size]
             batch_embeddings = self._embed_texts(batch_docs)
@@ -261,6 +275,9 @@ class RAGPipeline:
                 metadatas=metas[i : i + batch_size],
                 embeddings=batch_embeddings,
             )
+            if progress_callback is not None:
+                done_batches = (i // batch_size) + 1
+                progress_callback(done_batches, total_batches)
 
         return {"papers": len(papers), "chunks": len(ids)}
 

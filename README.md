@@ -16,15 +16,24 @@ The system ingests arXiv paper metadata from a CSV snapshot, stores it in SQLite
 
 ```
 .
-├── ingest.py           # Ingest arXiv CSV into SQLite + JSON
-├── clean.sql           # SQL script to clean/normalize raw data into analytical tables
-├── rag_pipeline.py     # Core RAG pipeline (ChromaDB vector store + embedding support)
-├── server.py           # FastAPI REST API server
-├── query_runner.py     # Batch question answering runner
-├── visualize.py        # Generate plots from the SQLite database
-├── questions.json      # Sample questions with grading criteria
-├── answer.json         # Pre-generated answers from the pipeline
-└── requirements.txt    # Python dependencies
+├── ingest.py                  # Ingest arXiv CSV into SQLite + JSON
+├── clean.sql                  # SQL script to clean/normalize raw data into analytical tables
+├── rag_pipeline.py            # Core RAG pipeline (ChromaDB vector store + embedding support)
+├── server.py                  # FastAPI REST API server
+├── query_runner.py            # Batch question answering runner
+├── visualize.py               # Generate plots from the SQLite database
+├── questions.json             # Sample questions with grading criteria
+├── answer.json                # Generated answers from the pipeline
+├── requirements.txt           # Python dependencies
+├── data/
+│   ├── arxiv.db               # SQLite database (ingested papers + cleaned tables)
+│   ├── papers_raw.json        # Raw papers JSON export
+│   └── plots/
+│       ├── 01_papers_per_category.png
+│       ├── 02_submission_trend_over_time.png
+│       ├── 03_publication_status_breakdown.png
+│       └── 04_abstract_length_distribution.png
+└── vector_store/              # ChromaDB vector index (auto-built on first run)
 ```
 
 ---
@@ -57,7 +66,15 @@ pip install -r requirements.txt
 
 For **local embeddings**, no additional setup is needed — the model is downloaded automatically on first use.
 
-For **OpenRouter embeddings**, set your API key:
+For **OpenRouter embeddings**, create a `.env` file in the project root with your API key:
+
+```bash
+cp .env.example .env
+# Edit .env and add your API key:
+# OPENROUTER_API_KEY="your-key-here"
+```
+
+Or set the environment variable directly:
 
 ```bash
 export OPENROUTER_API_KEY="your-key-here"
@@ -161,11 +178,24 @@ Use `--rebuild-clean` to re-run `clean.sql` automatically if the cleaned tables 
 
 | Environment Variable | Default | Description |
 |---|---|---|
-| `OPENROUTER_API_KEY` | — | API key for OpenRouter embedding requests |
-| `EMBEDDING_BACKEND` | `openrouter` | `local` or `openrouter` |
-| `LOCAL_EMBED_MODEL` | `sentence-transformers/all-minilm-l6-v2` | HuggingFace model name for local embeddings |
-| `OPENROUTER_EMBED_MODEL` | `nomic-ai/nomic-embed-text-v1.5` | OpenRouter embedding model |
-| `AUTO_BUILD_INDEX` | `false` | Build the vector index automatically at API startup |
+| `OPENROUTER_API_KEY` | — | **Required for OpenRouter backend.** API key from [openrouter.ai](https://openrouter.ai/) |
+| `EMBEDDING_BACKEND` | `openrouter` | Embedding backend: `local` (offline) or `openrouter` (API-based) |
+| `LOCAL_EMBED_MODEL` | `sentence-transformers/all-minilm-l6-v2` | HuggingFace model ID for local embeddings |
+| `OPENROUTER_EMBED_MODEL` | `text-embedding-3-small` | OpenRouter embedding model ID |
+| `AUTO_BUILD_INDEX` | `false` | Auto-build vector index on API startup (can be slow) |
+
+### Using .env File
+
+Create a `.env` file in the project root (see `.env.example`):
+
+```bash
+OPENROUTER_API_KEY=sk-...
+EMBEDDING_BACKEND=openrouter
+OPENROUTER_EMBED_MODEL=text-embedding-3-small
+AUTO_BUILD_INDEX=false
+```
+
+The `.env` file is loaded automatically by the application via `python-dotenv`.
 
 ---
 
@@ -178,6 +208,9 @@ Use `--rebuild-clean` to re-run `clean.sql` automatically if the cleaned tables 
 | `chromadb` | Vector store for embeddings |
 | `sentence-transformers` | Local embedding model |
 | `requests` | HTTP client for OpenRouter API |
+| `python-dotenv` | Load environment variables from `.env` file |
+| `pandas` | Data processing and CSV loading |
+| `matplotlib` | Visualization and charting |
 
 ---
 

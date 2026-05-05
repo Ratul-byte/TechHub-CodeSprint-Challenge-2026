@@ -2,47 +2,47 @@
   {
     "question_id": 1,
     "question": "In transformer-based text classification papers, what specific fine-tuning methods are used for sentiment or topic classification?",
-    "answer": "Unraveling reported dreams with text analytics: We investigate what distinguishes reported dreams from other personal narratives. The continuity hypothesis, stemming from psychological dream analysis work, states that most dreams refer to a person's daily life and personal concerns, similar to other personal narratives such... Generating Natural Language Adversarial Examples on a Large Scale with\n  Generative Models: Today text classification models have been widely used. However, these classifiers are found to be easily fooled by adversarial examples. Fortunately, standard attacking methods generate adversarial texts in a pair-wise way, that is, an adversarial text can only be created fro... Concise comparative summaries (CCS) of large text corpora with a human\n  experiment: In this paper we propose a general framework for topic-specific summarization of large text corpora and illustrate how it can be used for the analysis of news databases. Our framework, concise comparative summarization (CCS), is built on sparse classification methods. CCS is a...",
+    "answer": "STF: Sentence Transformer Fine-Tuning For Topic Categorization With\n  Limited Data: Nowadays, topic classification from tweets attracts considerable research attention. Different classification systems have been suggested thanks to these research efforts. Nevertheless, they face major challenges owing to low performance metrics due to the limited amount of la... Sentiment Analysis of Lithuanian Online Reviews Using Large Language\n  Models: Sentiment analysis is a widely researched area within Natural Language Processing (NLP), attracting significant interest due to the advent of automated solutions. Despite this, the task remains challenging because of the inherent complexity of languages and the subjective natu... Optimizing Multi-Class Text Classification: A Diverse Stacking Ensemble\n  Framework Utilizing Transformers: Customer reviews play a crucial role in assessing customer satisfaction, gathering feedback, and driving improvements for businesses. Analyzing these reviews provides valuable insights into customer sentiments, including compliments, comments, and suggestions. Text classificat...",
     "sources": [
       {
-        "arxiv_id": "1612.03659",
-        "title": "Unraveling reported dreams with text analytics",
+        "arxiv_id": "2407.03253",
+        "title": "STF: Sentence Transformer Fine-Tuning For Topic Categorization With\n  Limited Data",
         "category": "cs.CL",
-        "year": 2016,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.33589696884155273
       },
       {
-        "arxiv_id": "2003.10388",
-        "title": "Generating Natural Language Adversarial Examples on a Large Scale with\n  Generative Models",
+        "arxiv_id": "2407.19914",
+        "title": "Sentiment Analysis of Lithuanian Online Reviews Using Large Language\n  Models",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.3560217618942261
       },
       {
-        "arxiv_id": "1404.7362",
-        "title": "Concise comparative summaries (CCS) of large text corpora with a human\n  experiment",
+        "arxiv_id": "2308.11519",
+        "title": "Optimizing Multi-Class Text Classification: A Diverse Stacking Ensemble\n  Framework Utilizing Transformers",
         "category": "cs.CL",
-        "year": 2014,
-        "pub_status": "Published",
-        "distance": 0.1
+        "year": 2023,
+        "pub_status": "Preprint",
+        "distance": 0.3605504631996155
       },
       {
-        "arxiv_id": "1511.06798",
-        "title": "Conducting sparse feature selection on arbitrarily long phrases in text\n  corpora with a focus on interpretability",
+        "arxiv_id": "2307.10234",
+        "title": "SentimentGPT: Exploiting GPT for Advanced Sentiment Analysis and its\n  Departure from Current Machine Learning",
         "category": "cs.CL",
-        "year": 2015,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.3669431209564209
       },
       {
-        "arxiv_id": "1704.01975",
-        "title": "An Automated Text Categorization Framework based on Hyperparameter\n  Optimization",
+        "arxiv_id": "2106.02009",
+        "title": "A Case Study of Spanish Text Transformations for Twitter Sentiment\n  Analysis",
         "category": "cs.CL",
-        "year": 2017,
+        "year": 2021,
         "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.37092387676239014
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -52,47 +52,47 @@
   {
     "question_id": 2,
     "question": "What specific regularization methods are used to reduce overfitting in deep learning classification papers?",
-    "answer": "Distribution-Dependent Sample Complexity of Large Margin Learning: We obtain a tight distribution-specific characterization of the sample complexity of large-margin classification with L2 regularization: We introduce the margin-adapted dimension, which is a simple function of the second order statistics of the data distribution, and show dist... Algorithmic Detection of Computer Generated Text: Computer generated academic papers have been used to expose a lack of thorough human review at several computer science conferences. We assess the problem of classifying such documents. After identifying and evaluating several quantifiable features of academic papers, we apply... An Introduction to Artificial Prediction Markets for Classification: Prediction markets are used in real life to predict outcomes of interest such as presidential elections. This paper presents a mathematical theory of artificial prediction markets for supervised learning of conditional probability estimators. The artificial prediction market i...",
+    "answer": "Regularized deep learning with nonconvex penalties: Regularization methods are often employed in deep learning neural networks (DNNs) to prevent overfitting. For penalty based DNN regularization methods, convex penalties are typically considered because of their optimization guarantees. Recent theoretical work have shown that n... Regularizing Deep Neural Networks by Noise: Its Interpretation and\n  Optimization: Overfitting is one of the most critical challenges in deep neural networks, and there are various types of regularization methods to improve generalization performance. Injecting noises to hidden units during training, e.g., dropout, is known as a successful regularizer, but i... Overfitting in adversarially robust deep learning: we study several classical and modern deep learning remedies for overfitting, including regularization and data augmentation, and find that no approach in isolation improves significantly upon the gains achieved by early stopping. All code for reproducing the experiments as we...",
     "sources": [
       {
-        "arxiv_id": "1204.1276",
-        "title": "Distribution-Dependent Sample Complexity of Large Margin Learning",
+        "arxiv_id": "1909.05142",
+        "title": "Regularized deep learning with nonconvex penalties",
         "category": "stat.ML",
-        "year": 2012,
+        "year": 2019,
         "pub_status": "Published",
-        "distance": 0.125
+        "distance": 0.32158225774765015
       },
       {
-        "arxiv_id": "1008.0706",
-        "title": "Algorithmic Detection of Computer Generated Text",
-        "category": "stat.ML",
-        "year": 2010,
+        "arxiv_id": "1710.05179",
+        "title": "Regularizing Deep Neural Networks by Noise: Its Interpretation and\n  Optimization",
+        "category": "cs.LG",
+        "year": 2017,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.32577669620513916
       },
       {
-        "arxiv_id": "1102.1465",
-        "title": "An Introduction to Artificial Prediction Markets for Classification",
-        "category": "stat.ML",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1104.0896",
-        "title": "On Identifying Significant Edges in Graphical Models of Molecular\n  Networks",
-        "category": "stat.ML",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1105.0363",
-        "title": "Multi-scale Mining of fMRI data with Hierarchical Structured Sparsity",
-        "category": "stat.ML",
-        "year": 2011,
+        "arxiv_id": "2002.11569",
+        "title": "Overfitting in adversarially robust deep learning",
+        "category": "cs.LG",
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.3404098153114319
+      },
+      {
+        "arxiv_id": "2006.08643",
+        "title": "On the training dynamics of deep networks with $L_2$ regularization",
+        "category": "stat.ML",
+        "year": 2020,
+        "pub_status": "Preprint",
+        "distance": 0.35840266942977905
+      },
+      {
+        "arxiv_id": "2302.09433",
+        "title": "The Generalization Error of Stochastic Mirror Descent on\n  Over-Parametrized Linear Models",
+        "category": "cs.LG",
+        "year": 2023,
+        "pub_status": "Preprint",
+        "distance": 0.365922749042511
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -102,47 +102,39 @@
   {
     "question_id": 3,
     "question": "In reinforcement learning papers, what tasks are discussed for robotics or control problems?",
-    "answer": "FPGA Architecture for Deep Learning and its application to Planetary\n  Robotics: Autonomous control systems onboard planetary rovers and spacecraft benefit from having cognitive capabilities like learning so that they can adapt to unexpected situations in-situ. Q-learning is a form of reinforcement learning and it has been efficient in solving certain clas... Overcoming Exploration in Reinforcement Learning with Demonstrations: Exploration in environments with sparse rewards has been a persistent problem in reinforcement learning (RL). Many tasks are natural to specify with a sparse reward, and manually shaping a reward function can result in suboptimal performance. However, finding a non-zero reward... Temporal Difference Models: Model-Free Deep RL for Model-Based Control: Model-free reinforcement learning (RL) is a powerful, general tool for learning complex behaviors. However, its sample efficiency is often impractically large for solving challenging real-world problems, even with off-policy algorithms such as Q-learning. A limiting factor in...",
+    "answer": "Assessing Policy, Loss and Planning Combinations in Reinforcement\n  Learning using a New Modular Architecture: that the best combination of planning algorithm, policy, and loss function is heavily problem dependent. This result provides evidence that the proposed architecture, which is modular and reusable, is useful for reinforcement learning researchers who want to study new environm... Autotuning PID control using Actor-Critic Deep Reinforcement Learning: This work is an exploratory research concerned with determining in what way reinforcement learning can be used to predict optimal PID parameters for a robot designed for apple harvest. To study this, an algorithm called Advantage Actor Critic (A2C) is implemented on a simulate... Test-driven Reinforcement Learning in Continuous Control: Reinforcement learning (RL) has been recognized as a powerful tool for robot control tasks. RL typically employs reward functions to define task objectives and guide agent learning. However, since the reward function serves the dual purpose of defining the optimal goal and gui...",
     "sources": [
       {
-        "arxiv_id": "1701.07543",
-        "title": "FPGA Architecture for Deep Learning and its application to Planetary\n  Robotics",
+        "arxiv_id": "2201.02874",
+        "title": "Assessing Policy, Loss and Planning Combinations in Reinforcement\n  Learning using a New Modular Architecture",
         "category": "cs.LG",
-        "year": 2017,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4407162070274353
       },
       {
-        "arxiv_id": "1709.10089",
-        "title": "Overcoming Exploration in Reinforcement Learning with Demonstrations",
+        "arxiv_id": "2212.00013",
+        "title": "Autotuning PID control using Actor-Critic Deep Reinforcement Learning",
         "category": "cs.LG",
-        "year": 2017,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4514155387878418
       },
       {
-        "arxiv_id": "1802.09081",
-        "title": "Temporal Difference Models: Model-Free Deep RL for Model-Based Control",
+        "arxiv_id": "2511.07904",
+        "title": "Test-driven Reinforcement Learning in Continuous Control",
         "category": "cs.LG",
-        "year": 2018,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4522496461868286
       },
       {
-        "arxiv_id": "1802.10592",
-        "title": "Model-Ensemble Trust-Region Policy Optimization",
+        "arxiv_id": "2309.01909",
+        "title": "A Survey on Physics Informed Reinforcement Learning: Review and Open Problems",
         "category": "cs.LG",
-        "year": 2018,
-        "pub_status": "Preprint",
-        "distance": 0.125
-      },
-      {
-        "arxiv_id": "1804.02808",
-        "title": "Latent Space Policies for Hierarchical Reinforcement Learning",
-        "category": "cs.LG",
-        "year": 2018,
-        "pub_status": "Preprint",
-        "distance": 0.125
+        "year": 2023,
+        "pub_status": "Published",
+        "distance": 0.4606286287307739
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -152,47 +144,47 @@
   {
     "question_id": 4,
     "question": "Which benchmark datasets are most often used in computer vision papers on detection or segmentation?",
-    "answer": "The History Began from AlexNet: A Comprehensive Survey on Deep Learning\n  Approaches: Deep learning has demonstrated tremendous success in variety of application domains in the past few years. This new field of machine learning has been growing rapidly and applied in most of the application domains with some new modalities of applications, which helps to open n... On the Importance of Visual Context for Data Augmentation in Scene\n  Understanding: Performing data augmentation for learning deep neural networks is known to be important for training visual recognition systems. By artificially increasing the number of training examples, it helps reducing overfitting and improves generalization. While simple image transforma... Deep Attentive Tracking via Reciprocative Learning: Visual attention, derived from cognitive neuroscience, facilitates human perception on the most pertinent subset of the sensory data. Recently, significant efforts have been made to exploit attention schemes to advance computer vision systems. For visual tracking, it is often...",
+    "answer": "Detecting Figures and Part Labels in Patents: Competition-Based\n  Development of Image Processing Algorithms: detection, 78.81% for figure regions with correctly recognized figure titles, and 70.98% for part label detection and character recognition. Data and software from the competition are available through the online UCI Machine Learning repository to inspire follow-on work by the... MISeval: a Metric Library for Medical Image Segmentation Evaluation: Correct performance assessment is crucial for evaluating modern artificial intelligence algorithms in medicine like deep-learning based medical image segmentation models. However, there is no universal metric library in Python for standardized and reproducible evaluation. Thus... Fully Convolutional Networks and Generative Adversarial Networks Applied\n  to Sclera Segmentation: objective evaluations of the proposed approaches, we provide to the scientific community new 1,300 manually segmented images from two databases. The experiments are performed on the UBIRIS.v2 and MICHE databases and the best performing configurations of our propositions achiev...",
     "sources": [
       {
-        "arxiv_id": "1803.01164",
-        "title": "The History Began from AlexNet: A Comprehensive Survey on Deep Learning\n  Approaches",
+        "arxiv_id": "1410.6751",
+        "title": "Detecting Figures and Part Labels in Patents: Competition-Based\n  Development of Image Processing Algorithms",
+        "category": "cs.CV",
+        "year": 2014,
+        "pub_status": "Preprint",
+        "distance": 0.4041897654533386
+      },
+      {
+        "arxiv_id": "2201.09395",
+        "title": "MISeval: a Metric Library for Medical Image Segmentation Evaluation",
+        "category": "cs.CV",
+        "year": 2022,
+        "pub_status": "Preprint",
+        "distance": 0.41237109899520874
+      },
+      {
+        "arxiv_id": "1806.08722",
+        "title": "Fully Convolutional Networks and Generative Adversarial Networks Applied\n  to Sclera Segmentation",
         "category": "cs.CV",
         "year": 2018,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.41555923223495483
       },
       {
-        "arxiv_id": "1809.02492",
-        "title": "On the Importance of Visual Context for Data Augmentation in Scene\n  Understanding",
+        "arxiv_id": "2003.07557",
+        "title": "1st Place Solutions for OpenImage2019 -- Object Detection and Instance\n  Segmentation",
         "category": "cs.CV",
-        "year": 2018,
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.43166792392730713
       },
       {
-        "arxiv_id": "1810.03851",
-        "title": "Deep Attentive Tracking via Reciprocative Learning",
+        "arxiv_id": "2501.16182",
+        "title": "The Linear Attention Resurrection in Vision Transformer",
         "category": "cs.CV",
-        "year": 2018,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.1
-      },
-      {
-        "arxiv_id": "1810.04377",
-        "title": "Learning Deep Representations for Semantic Image Parsing: a\n  Comprehensive Overview",
-        "category": "cs.CV",
-        "year": 2018,
-        "pub_status": "Preprint",
-        "distance": 0.1
-      },
-      {
-        "arxiv_id": "1903.12239",
-        "title": "SpaceNet MVOI: a Multi-View Overhead Imagery Dataset",
-        "category": "cs.CV",
-        "year": 2019,
-        "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.43564367294311523
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -202,47 +194,39 @@
   {
     "question_id": 5,
     "question": "What uncertainty quantification methods are discussed in probabilistic machine learning papers?",
-    "answer": "Properties and Bayesian fitting of restricted Boltzmann machines: A restricted Boltzmann machine (RBM) is an undirected graphical model constructed for discrete or continuous random variables, with two layers, one hidden and one visible, and no conditional dependency within a layer. In recent years, RBMs have risen to prominence due to their... Comparing Probabilistic Models for Melodic Sequences: Modelling the real world complexity of music is a challenge for machine learning. We address the task of modeling melodic sequences from the same music genre. We perform a comparative analysis of two probabilistic models; a Dirichlet Variable Length Markov Model (Dirichlet-VMM... Probabilistic Solutions to Differential Equations and their Application\n  to Riemannian Statistics: We study a probabilistic numerical method for the solution of both boundary and initial value problems that returns a joint Gaussian process posterior over the solution. Such methods have concrete value in the statistics on Riemannian manifolds, where non-analytic ordinary dif...",
+    "answer": "Uncertainty Quantification in Probabilistic Machine Learning Models: Theory, Methods, and Insights: Uncertainty Quantification (UQ) is essential in probabilistic machine learning models, particularly for assessing the reliability of predictions. In this paper, we present a systematic framework for estimating both epistemic and aleatoric uncertainty in probabilistic models. W... Nonparametric Uncertainty Quantification for Single Deterministic Neural\n  Network: This paper proposes a fast and scalable method for uncertainty quantification of machine learning models' predictions. First, we show the principled way to measure the uncertainty of predictions for a classifier based on Nadaraya-Watson's nonparametric estimate of the conditio... On the Calibration of Probabilistic Classifier Sets: Multi-class classification methods that produce sets of probabilistic classifiers, such as ensemble learning methods, are able to model aleatoric and epistemic uncertainty. Aleatoric uncertainty is then typically quantified via the Bayes error, and epistemic uncertainty via th...",
     "sources": [
       {
-        "arxiv_id": "1612.01158",
-        "title": "Properties and Bayesian fitting of restricted Boltzmann machines",
+        "arxiv_id": "2509.05877",
+        "title": "Uncertainty Quantification in Probabilistic Machine Learning Models: Theory, Methods, and Insights",
         "category": "stat.ML",
-        "year": 2016,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.3902752995491028
       },
       {
-        "arxiv_id": "1109.6804",
-        "title": "Comparing Probabilistic Models for Melodic Sequences",
+        "arxiv_id": "2202.03101",
+        "title": "Nonparametric Uncertainty Quantification for Single Deterministic Neural\n  Network",
         "category": "stat.ML",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1306.0308",
-        "title": "Probabilistic Solutions to Differential Equations and their Application\n  to Riemannian Statistics",
-        "category": "stat.ML",
-        "year": 2013,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1502.00727",
-        "title": "Laplacian Mixture Modeling for Network Analysis and Unsupervised\n  Learning on Graphs",
-        "category": "stat.ML",
-        "year": 2015,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1508.00451",
-        "title": "Integrated Inference and Learning of Neural Factors in Structural\n  Support Vector Machines",
-        "category": "stat.ML",
-        "year": 2015,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.3948649764060974
+      },
+      {
+        "arxiv_id": "2205.10082",
+        "title": "On the Calibration of Probabilistic Classifier Sets",
+        "category": "stat.ML",
+        "year": 2022,
+        "pub_status": "Preprint",
+        "distance": 0.4057350158691406
+      },
+      {
+        "arxiv_id": "2303.14568",
+        "title": "Measuring Classification Decision Certainty and Doubt",
+        "category": "stat.ML",
+        "year": 2023,
+        "pub_status": "Preprint",
+        "distance": 0.40716952085494995
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -252,47 +236,47 @@
   {
     "question_id": 6,
     "question": "In cs.AI papers from 2023, what themes appear around planning, agents, and tool use?",
-    "answer": "Roots and Requirements for Collaborative AIs: The vision of AI collaborators is a staple of mythology and science fiction, where artificial agents with special talents assist human partners and teams. In this dream, sophisticated AIs understand nuances of collaboration and human communication. The AI as collaborator dream... Generative agent-based modeling with actions grounded in physical,\n  social, or digital space using Concordia: Agent-based modeling has been around for decades, and applied widely across the social and natural sciences. The scope of this research method is now poised to grow dramatically as it absorbs the new affordances provided by Large Language Models (LLM)s. Generative Agent-Based... KwaiAgents: Generalized Information-seeking Agent System with Large\n  Language Models: Driven by curiosity, humans have continually sought to explore and understand the world around them, leading to the invention of various tools to satiate this inquisitiveness. Despite not having the capacity to process and memorize vast amounts of information in their brains,...",
+    "answer": "Timeline-based Planning and Execution with Uncertainty: Theory, Modeling\n  Methodologies and Practice: Automated Planning is one of the main research field of Artificial Intelligence since its beginnings. Research in Automated Planning aims at developing general reasoners (i.e., planners) capable of automatically solve complex problems. Broadly speaking, planners rely on a gene... Report from the NSF Future Directions Workshop, Toward User-Oriented\n  Agents: Research Directions and Challenges: This USER Workshop was convened with the goal of defining future research directions for the burgeoning intelligent agent research community and to communicate them to the National Science Foundation. It took place in Pittsburgh Pennsylvania on October 24 and 25, 2019 and was... Position Paper: Online Modeling for Offline Planning: The definition and representation of planning problems is at the heart of AI planning research. A key part is the representation of action models. Decades of advances improving declarative action model representations resulted in numerous theoretical advances, and capable, wor...",
     "sources": [
       {
-        "arxiv_id": "2303.1204",
-        "title": "Roots and Requirements for Collaborative AIs",
+        "arxiv_id": "1905.05713",
+        "title": "Timeline-based Planning and Execution with Uncertainty: Theory, Modeling\n  Methodologies and Practice",
         "category": "cs.AI",
-        "year": 2023,
+        "year": 2019,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.44589293003082275
       },
       {
-        "arxiv_id": "2312.03664",
-        "title": "Generative agent-based modeling with actions grounded in physical,\n  social, or digital space using Concordia",
-        "category": "cs.AI",
-        "year": 2023,
+        "arxiv_id": "2006.06026",
+        "title": "Report from the NSF Future Directions Workshop, Toward User-Oriented\n  Agents: Research Directions and Challenges",
+        "category": "cs.CL",
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.45725929737091064
       },
       {
-        "arxiv_id": "2312.04889",
-        "title": "KwaiAgents: Generalized Information-seeking Agent System with Large\n  Language Models",
+        "arxiv_id": "2206.03356",
+        "title": "Position Paper: Online Modeling for Offline Planning",
         "category": "cs.AI",
-        "year": 2023,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.45929956436157227
       },
       {
-        "arxiv_id": "2312.15908",
-        "title": "Decentralized Monte Carlo Tree Search for Partially Observable\n  Multi-agent Pathfinding",
+        "arxiv_id": "2601.03555",
+        "title": "SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models",
         "category": "cs.AI",
-        "year": 2023,
+        "year": 2026,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4659184217453003
       },
       {
-        "arxiv_id": "2303.14272",
-        "title": "Learning to Operate in Open Worlds by Adapting Planning Models",
+        "arxiv_id": "2011.10707",
+        "title": "Explainable Composition of Aggregated Assistants",
         "category": "cs.AI",
-        "year": 2023,
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.46719419956207275
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -302,47 +286,47 @@
   {
     "question_id": 7,
     "question": "Which evaluation metrics are used in NLP papers for classification and text generation tasks?",
-    "answer": "Identification of primary and collateral tracks in stuttered speech: Disfluent speech has been previously addressed from two main perspectives: the clinical perspective focusing on diagnostic, and the Natural Language Processing (NLP) perspective aiming at modeling these events and detect them for downstream tasks. In addition, previous works o... Classification Benchmarks for Under-resourced Bengali Language based on\n  Multichannel Convolutional-LSTM Network: Exponential growths of social media and micro-blogging sites not only provide platforms for empowering freedom of expressions and individual voices but also enables people to express anti-social behaviour like online harassment, cyberbullying, and hate speech. Numerous works h... Russian Natural Language Generation: Creation of a Language Modelling\n  Dataset and Evaluation with Modern Neural Architectures: Generating coherent, grammatically correct, and meaningful text is very challenging, however, it is crucial to many modern NLP systems. So far, research has mostly focused on English language, for other languages both standardized datasets, as well as experiments with state-of...",
+    "answer": "Perturbation CheckLists for Evaluating NLG Evaluation Metrics: Natural Language Generation (NLG) evaluation is a multifaceted task requiring assessment of multiple desirable criteria, e.g., fluency, coherency, coverage, relevance, adequacy, overall quality, etc. Across existing datasets for 6 NLG tasks, we observe that the human evaluatio... Automatic Metrics in Natural Language Generation: A Survey of Current\n  Evaluation Practices: Automatic metrics are extensively used to evaluate natural language processing systems. However, there has been increasing focus on how they are used and reported by practitioners within the field. In this paper, we have conducted a survey on the use of automatic metrics, focu... On the Effectiveness of Automated Metrics for Text Generation Systems: A major challenge in the field of Text Generation is evaluation because we lack a sound theory that can be leveraged to extract guidelines for evaluation campaigns. In this work, we propose a first step towards such a theory that incorporates different sources of uncertainty,...",
     "sources": [
       {
-        "arxiv_id": "2003.01018",
-        "title": "Identification of primary and collateral tracks in stuttered speech",
+        "arxiv_id": "2109.05771",
+        "title": "Perturbation CheckLists for Evaluating NLG Evaluation Metrics",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2021,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.3057273030281067
       },
       {
-        "arxiv_id": "2004.07807",
-        "title": "Classification Benchmarks for Under-resourced Bengali Language based on\n  Multichannel Convolutional-LSTM Network",
+        "arxiv_id": "2408.09169",
+        "title": "Automatic Metrics in Natural Language Generation: A Survey of Current\n  Evaluation Practices",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.3331500291824341
       },
       {
-        "arxiv_id": "2005.0247",
-        "title": "Russian Natural Language Generation: Creation of a Language Modelling\n  Dataset and Evaluation with Modern Neural Architectures",
+        "arxiv_id": "2210.13025",
+        "title": "On the Effectiveness of Automated Metrics for Text Generation Systems",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.09090909090909091
+        "distance": 0.3403450846672058
       },
       {
-        "arxiv_id": "1511.02556",
-        "title": "Sentiment Expression via Emoticons on Social Media",
+        "arxiv_id": "2310.00752",
+        "title": "TIGERScore: Towards Building Explainable Metric for All Text Generation\n  Tasks",
         "category": "cs.CL",
-        "year": 2015,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.34491825103759766
       },
       {
-        "arxiv_id": "1602.02047",
-        "title": "Utiliza\\c{c}\\~ao de Grafos e Matriz de Similaridade na Sumariza\\c{c}\\~ao\n  Autom\\'atica de Documentos Baseada em Extra\\c{c}\\~ao de Frases",
+        "arxiv_id": "2110.08559",
+        "title": "FrugalScore: Learning Cheaper, Lighter and Faster Evaluation Metricsfor\n  Automatic Text Generation",
         "category": "cs.CL",
-        "year": 2016,
+        "year": 2021,
         "pub_status": "Preprint",
-        "distance": 0.1
+        "distance": 0.3450550436973572
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -352,47 +336,47 @@
   {
     "question_id": 8,
     "question": "What model families dominate cs.CV papers from 2022 on vision transformers and diffusion models?",
-    "answer": "Unified Physical Threat Monitoring System Aided by Virtual Building\n  Simulation: With increasing physical threats in recent years targeted at critical infrastructures, it is crucial to establish a reliable threat monitoring system integrating video surveillance and digital sensors based on cutting-edge technologies. A physical threat monitoring solution un... Attentive Fine-Grained Structured Sparsity for Image Restoration: Image restoration tasks have witnessed great performance improvement in recent years by developing large deep models. Despite the outstanding performance, the heavy computation demanded by the deep models has restricted the application of image restoration. To lift the restric... ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for\n  Image Recognition and Beyond: Vision transformers have shown great potential in various computer vision tasks owing to their strong capability to model long-range dependency using the self-attention mechanism. Nevertheless, they treat an image as a 1D sequence of visual tokens, lacking an intrinsic inducti...",
+    "answer": "Diffusion Models in Low-Level Vision: A Survey: evaluation metrics. We conduct a thorough evaluation, encompassing both performance and efficiency, of diffusion model-based techniques in three prominent tasks. Finally, we elucidate the limitations of current diffusion models and propose seven intriguing directions for futur... PAIR-Diffusion: A Comprehensive Multimodal Object-Level Image Editor: objects, and variations. Thanks to our design, we do not require any inversion step. Additionally, we propose multimodal classifier-free guidance which enables editing images using both reference images and text when using our approach with foundational diffusion models. We va... Class-Balancing Diffusion Models: Diffusion-based models have shown the merits of generating high-quality visual data while preserving better diversity in recent studies. However, such observation is only justified with curated data distribution, where the data samples are nicely pre-processed to be uniformly...",
     "sources": [
       {
-        "arxiv_id": "2203.00789",
-        "title": "Unified Physical Threat Monitoring System Aided by Virtual Building\n  Simulation",
+        "arxiv_id": "2406.11138",
+        "title": "Diffusion Models in Low-Level Vision: A Survey",
         "category": "cs.CV",
-        "year": 2022,
-        "pub_status": "Published",
-        "distance": 0.1111111111111111
-      },
-      {
-        "arxiv_id": "2204.12266",
-        "title": "Attentive Fine-Grained Structured Sparsity for Image Restoration",
-        "category": "cs.CV",
-        "year": 2022,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.4237717390060425
       },
       {
-        "arxiv_id": "2202.10108",
-        "title": "ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for\n  Image Recognition and Beyond",
+        "arxiv_id": "2303.17546",
+        "title": "PAIR-Diffusion: A Comprehensive Multimodal Object-Level Image Editor",
         "category": "cs.CV",
-        "year": 2022,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4662579298019409
       },
       {
-        "arxiv_id": "2203.0358",
-        "title": "The Unsurprising Effectiveness of Pre-Trained Vision Models for Control",
+        "arxiv_id": "2305.00562",
+        "title": "Class-Balancing Diffusion Models",
         "category": "cs.CV",
-        "year": 2022,
-        "pub_status": "Published",
-        "distance": 0.125
-      },
-      {
-        "arxiv_id": "2205.09616",
-        "title": "Masked Image Modeling with Denoising Contrast",
-        "category": "cs.CV",
-        "year": 2022,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.5021175146102905
+      },
+      {
+        "arxiv_id": "2506.21757",
+        "title": "TADA: Improved Diffusion Sampling with Training-free Augmented Dynamics",
+        "category": "stat.ML",
+        "year": 2025,
+        "pub_status": "Preprint",
+        "distance": 0.5055375695228577
+      },
+      {
+        "arxiv_id": "2408.10207",
+        "title": "A Comprehensive Survey on Diffusion Models and Their Applications",
+        "category": "cs.CV",
+        "year": 2024,
+        "pub_status": "Preprint",
+        "distance": 0.5188521146774292
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -402,47 +386,23 @@
   {
     "question_id": 9,
     "question": "What train-validation-test splitting and cross-validation practices are described in machine learning methodology papers?",
-    "answer": "Deep Learning and Quantum Entanglement: Fundamental Connections with\n  Implications to Network Design: Deep convolutional networks have witnessed unprecedented success in various machine learning applications. Formal understanding on what makes these networks so successful is gradually unfolding, but for the most part there are still significant mysteries to unravel. The induct... Improved Coresets for Kernel Density Estimates: We study the construction of coresets for kernel density estimates. That is we show how to approximate the kernel density estimate described by a large point set with another kernel density estimate with a much smaller point set. For characteristic kernels (including Gaussian... Anomaly and Change Detection in Graph Streams through Constant-Curvature\n  Manifold Embeddings: Mapping complex input data into suitable lower dimensional manifolds is a common procedure in machine learning. This step is beneficial mainly for two reasons: (1) it reduces the data dimensionality and (2) it provides a new data representation possibly characterised by conven...",
+    "answer": "Theoretical Analyses of Cross-Validation Error and Voting in\n  Instance-Based Learning: This paper begins with a general theory of error in cross-validation testing of algorithms for supervised learning from examples. It is assumed that the examples are described by attribute-value pairs, where the values are symbolic. Cross-validation requires a set of training... On Tail Decay Rate Estimation of Loss Function Distributions: The study of loss function distributions is critical to characterize a model's behaviour on a given machine learning problem. For example, while the quality of a model is commonly determined by the average loss assessed on a testing set, this quantity does not reflect the exis...",
     "sources": [
       {
-        "arxiv_id": "1704.01552",
-        "title": "Deep Learning and Quantum Entanglement: Fundamental Connections with\n  Implications to Network Design",
+        "arxiv_id": "cs/0212030",
+        "title": "Theoretical Analyses of Cross-Validation Error and Voting in\n  Instance-Based Learning",
         "category": "cs.LG",
-        "year": 2017,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1710.04325",
-        "title": "Improved Coresets for Kernel Density Estimates",
-        "category": "cs.LG",
-        "year": 2017,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1805.0136",
-        "title": "Anomaly and Change Detection in Graph Streams through Constant-Curvature\n  Manifold Embeddings",
-        "category": "cs.LG",
-        "year": 2018,
+        "year": 2002,
         "pub_status": "Published",
-        "distance": 0.14285714285714285
+        "distance": 0.5046436190605164
       },
       {
-        "arxiv_id": "1806.0679",
-        "title": "Towards Distributed Energy Services: Decentralizing Optimal Power Flow\n  with Machine Learning",
+        "arxiv_id": "2306.02807",
+        "title": "On Tail Decay Rate Estimation of Loss Function Distributions",
         "category": "cs.LG",
-        "year": 2018,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1811.11668",
-        "title": "Racial categories in machine learning",
-        "category": "cs.LG",
-        "year": 2018,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.548582911491394
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -452,47 +412,47 @@
   {
     "question_id": 10,
     "question": "Which Bayesian and ensemble uncertainty methods appear in stat.ML papers from 2021?",
-    "answer": "Bayesian data-driven discovery of partial differential equations with\n  variable coefficients: The discovery of Partial Differential Equations (PDEs) is an essential task for applied science and engineering. However, data-driven discovery of PDEs is generally challenging, primarily stemming from the sensitivity of the discovered equation to noise and the complexities of... Flexible Model Aggregation for Quantile Regression: Quantile regression is a fundamental problem in statistical learning motivated by a need to quantify uncertainty in predictions, or to model a diverse population without being overly reductive. For instance, epidemiological forecasts, cost estimates, and revenue predictions al... Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design: We introduce Deep Adaptive Design (DAD), a method for amortizing the cost of adaptive Bayesian experimental design that allows experiments to be run in real-time. Traditional sequential Bayesian optimal experimental design approaches require substantial computation at each sta...",
+    "answer": "Bayesian System ID: Optimal management of parameter, model, and\n  measurement uncertainty: Carlo scheme that we use to obtain the Bayesian posterior for both linear and nonlinear problems. We then empirically demonstrate that obtaining the marginal posterior of the parameter dynamics and making predictions by extracting optimal estimators (e.g., mean, median, mode)... Calibrated and uncertain? Evaluating uncertainty estimates in binary classification models: Rigorous statistical methods, including parameter estimation with accompanying uncertainties, underpin the validity of scientific discovery, especially in the natural sciences. With increasingly complex data models such as deep learning techniques, uncertainty quantification h... Time-series Scenario Forecasting: Many applications require the ability to judge uncertainty of time-series forecasts. Uncertainty is often specified as point-wise error bars around a mean or median forecast. Due to temporal dependencies, such a method obscures some information. We would ideally have a way to...",
     "sources": [
       {
-        "arxiv_id": "2102.01432",
-        "title": "Bayesian data-driven discovery of partial differential equations with\n  variable coefficients",
+        "arxiv_id": "2003.02359",
+        "title": "Bayesian System ID: Optimal management of parameter, model, and\n  measurement uncertainty",
         "category": "stat.ML",
+        "year": 2020,
+        "pub_status": "Preprint",
+        "distance": 0.4896275997161865
+      },
+      {
+        "arxiv_id": "2508.1146",
+        "title": "Calibrated and uncertain? Evaluating uncertainty estimates in binary classification models",
+        "category": "cs.LG",
+        "year": 2025,
+        "pub_status": "Preprint",
+        "distance": 0.494335412979126
+      },
+      {
+        "arxiv_id": "1211.301",
+        "title": "Time-series Scenario Forecasting",
+        "category": "stat.ML",
+        "year": 2012,
+        "pub_status": "Preprint",
+        "distance": 0.4952050447463989
+      },
+      {
+        "arxiv_id": "cs/0504043",
+        "title": "Experimental Comparison of Classification Uncertainty for Randomised and\n  Bayesian Decision Tree Ensembles",
+        "category": "cs.AI",
+        "year": 2005,
+        "pub_status": "Preprint",
+        "distance": 0.5018309354782104
+      },
+      {
+        "arxiv_id": "2112.13776",
+        "title": "Transformer Uncertainty Estimation with Hierarchical Stochastic\n  Attention",
+        "category": "cs.CL",
         "year": 2021,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2103.00083",
-        "title": "Flexible Model Aggregation for Quantile Regression",
-        "category": "stat.ML",
-        "year": 2021,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2103.02438",
-        "title": "Deep Adaptive Design: Amortizing Sequential Bayesian Experimental Design",
-        "category": "stat.ML",
-        "year": 2021,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2103.03655",
-        "title": "Foundations of Population-Based SHM, Part IV: The Geometry of Spaces of\n  Structures and their Feature Spaces",
-        "category": "stat.ML",
-        "year": 2021,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2103.11749",
-        "title": "Simulation comparisons between Bayesian and de-biased estimators in\n  low-rank matrix completion",
-        "category": "stat.ML",
-        "year": 2021,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
+        "distance": 0.5123996734619141
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -502,47 +462,47 @@
   {
     "question_id": 11,
     "question": "What optimization algorithms are most common in recent deep learning training papers?",
-    "answer": "Training Support Vector Machines Using Frank-Wolfe Optimization Methods: Training a Support Vector Machine (SVM) requires the solution of a quadratic programming problem (QP) whose computational complexity becomes prohibitively expensive for large scale datasets. Traditional optimization methods cannot be directly applied in these cases, mainly due... A generalized risk approach to path inference based on hidden Markov\n  models: Motivated by the unceasing interest in hidden Markov models (HMMs), this paper re-examines hidden path inference in these models, using primarily a risk-based framework. While the most common maximum a posteriori (MAP), or Viterbi, path estimator and the minimum error, or Post... Learning sparse representations of depth: This paper introduces a new method for learning and inferring sparse representations of depth (disparity) maps. The proposed algorithm relaxes the usual assumption of the stationary noise model in sparse coding. This enables learning from data corrupted with spatially varying...",
+    "answer": "Newton Methods for Convolutional Neural Networks: Deep learning involves a difficult non-convex optimization problem, which is often solved by stochastic gradient (SG) methods. While SG is usually effective, it may not be robust in some situations. Recently, Newton methods have been investigated as an alternative optimization... Optimizer Benchmarking Needs to Account for Hyperparameter Tuning: The performance of optimizers, particularly in deep learning, depends considerably on their chosen hyperparameter configuration. The efficacy of optimizers is often studied under near-optimal problem-specific hyperparameters, and finding these settings may be prohibitively cos... Derivative-Free Global Optimization Algorithms: Bayesian Method and\n  Lipschitzian Approaches: In this paper, we will provide an introduction to the derivative-free optimization algorithms which can be potentially applied to train deep learning models. Existing deep learning model training is mostly based on the back propagation algorithm, which updates the model variab...",
     "sources": [
       {
-        "arxiv_id": "1212.0695",
-        "title": "Training Support Vector Machines Using Frank-Wolfe Optimization Methods",
-        "category": "cs.LG",
-        "year": 2012,
-        "pub_status": "Published",
-        "distance": 0.125
-      },
-      {
-        "arxiv_id": "1007.3622",
-        "title": "A generalized risk approach to path inference based on hidden Markov\n  models",
+        "arxiv_id": "1811.061",
+        "title": "Newton Methods for Convolutional Neural Networks",
         "category": "stat.ML",
-        "year": 2010,
+        "year": 2018,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4447805881500244
       },
       {
-        "arxiv_id": "1011.6656",
-        "title": "Learning sparse representations of depth",
-        "category": "cs.CV",
-        "year": 2010,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1106.1818",
-        "title": "Inducing Interpretable Voting Classifiers without Trading Accuracy for\n  Simplicity: Theoretical Results, Approximation Algorithms",
-        "category": "cs.AI",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1108.4559",
-        "title": "Optimal Algorithms for Ridge and Lasso Regression with Partially\n  Observed Attributes",
+        "arxiv_id": "1910.11758",
+        "title": "Optimizer Benchmarking Needs to Account for Hyperparameter Tuning",
         "category": "cs.LG",
-        "year": 2011,
+        "year": 2019,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.44710588455200195
+      },
+      {
+        "arxiv_id": "1904.09365",
+        "title": "Derivative-Free Global Optimization Algorithms: Bayesian Method and\n  Lipschitzian Approaches",
+        "category": "cs.LG",
+        "year": 2019,
+        "pub_status": "Preprint",
+        "distance": 0.44846951961517334
+      },
+      {
+        "arxiv_id": "1805.06753",
+        "title": "Interpolatron: Interpolation or Extrapolation Schemes to Accelerate\n  Optimization for Deep Neural Networks",
+        "category": "stat.ML",
+        "year": 2018,
+        "pub_status": "Preprint",
+        "distance": 0.45437830686569214
+      },
+      {
+        "arxiv_id": "2011.08042",
+        "title": "Mixing ADAM and SGD: a Combined Optimization Method",
+        "category": "cs.LG",
+        "year": 2020,
+        "pub_status": "Preprint",
+        "distance": 0.45822352170944214
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -552,47 +512,47 @@
   {
     "question_id": 12,
     "question": "What NLP tasks are most discussed in cs.CL papers on translation, summarization, and question answering?",
-    "answer": "PEYMA: A Tagged Corpus for Persian Named Entities: The goal in the NER task is to classify proper nouns of a text into classes such as person, location, and organization. This is an important preprocessing step in many NLP tasks such as question-answering and summarization. Although many research studies have been conducted in... What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in\n  Deep NLP Models: Despite the remarkable evolution of deep neural networks in natural language processing (NLP), their interpretability remains a challenge. Previous work largely focused on what these models learn at the representation level. We break this analysis down further and study indivi... Lite Transformer with Long-Short Range Attention: Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained...",
+    "answer": "A Neural-Symbolic Approach Towards Identifying Grammatically Correct\n  Sentences: Textual content around us is growing on a daily basis. Numerous articles are being written as we speak on online newspapers, blogs, or social media. Similarly, recent advances in the AI field, like language models or traditional classic AI approaches, are utilizing all the abo... On Context Utilization in Summarization with Large Language Models: Large language models (LLMs) excel in abstractive summarization tasks, delivering fluent and pertinent summaries. Recent advancements have extended their capabilities to handle long-input contexts, exceeding 100k tokens. However, in question answering, language models exhibit... Benchmarking Generation and Evaluation Capabilities of Large Language\n  Models for Instruction Controllable Summarization: While large language models (LLMs) can already achieve strong performance on standard generic summarization benchmarks, their performance on more complex summarization task settings is less studied. Therefore, we benchmark LLMs on instruction controllable text summarization, w...",
     "sources": [
       {
-        "arxiv_id": "1801.09936",
-        "title": "PEYMA: A Tagged Corpus for Persian Named Entities",
+        "arxiv_id": "2307.08036",
+        "title": "A Neural-Symbolic Approach Towards Identifying Grammatically Correct\n  Sentences",
         "category": "cs.CL",
-        "year": 2018,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.4051550030708313
       },
       {
-        "arxiv_id": "1812.09355",
-        "title": "What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in\n  Deep NLP Models",
+        "arxiv_id": "2310.1057",
+        "title": "On Context Utilization in Summarization with Large Language Models",
         "category": "cs.CL",
-        "year": 2018,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.41583251953125
       },
       {
-        "arxiv_id": "2004.11886",
-        "title": "Lite Transformer with Long-Short Range Attention",
+        "arxiv_id": "2311.09184",
+        "title": "Benchmarking Generation and Evaluation Capabilities of Large Language\n  Models for Instruction Controllable Summarization",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.4398207664489746
       },
       {
-        "arxiv_id": "2006.04229",
-        "title": "Pre-training Polish Transformer-based Language Models at Scale",
+        "arxiv_id": "2404.01701",
+        "title": "On the Role of Summary Content Units in Text Summarization Evaluation",
         "category": "cs.CL",
-        "year": 2020,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.44099438190460205
       },
       {
-        "arxiv_id": "1407.2918",
-        "title": "A Survey of Named Entity Recognition in Assamese and other Indian\n  Languages",
+        "arxiv_id": "2203.0382",
+        "title": "A Variational Hierarchical Model for Neural Cross-Lingual Summarization",
         "category": "cs.CL",
-        "year": 2014,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.445609450340271
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -602,47 +562,47 @@
   {
     "question_id": 13,
     "question": "What dataset and benchmark trends appear in cs.CV papers about recognition and detection?",
-    "answer": "VPGNet: Vanishing Point Guided Network for Lane and Road Marking\n  Detection and Recognition: In this paper, we propose a unified end-to-end trainable multi-task network that jointly handles lane and road marking detection and recognition that is guided by a vanishing point under adverse weather conditions. We tackle rainy and low illumination conditions, which have no... Enhanced skin colour classifier using RGB Ratio model: Skin colour detection is frequently been used for searching people, face detection, pornographic filtering and hand tracking. The presence of skin or non-skin in digital image can be determined by manipulating pixels colour or pixels texture. The main problem in skin colour de... A Survey on Recent Advances of Computer Vision Algorithms for Egocentric\n  Video: Recent technological advances have made lightweight, head mounted cameras both practical and affordable and products like Google Glass show first approaches to introduce the idea of egocentric (first-person) video to the mainstream. Interestingly, the computer vision community...",
+    "answer": "Detecting Figures and Part Labels in Patents: Competition-Based\n  Development of Image Processing Algorithms: detection, 78.81% for figure regions with correctly recognized figure titles, and 70.98% for part label detection and character recognition. Data and software from the competition are available through the online UCI Machine Learning repository to inspire follow-on work by the... Pattern Generation Strategies for Improving Recognition of Handwritten\n  Mathematical Expressions: 2016 databases demonstrate the superiority and effectiveness of our strategies: our hybrid strategy achieved classification rates of 48.78% and 45.60%, respectively, on these databases. These results are competitive compared to others reported in recent literature. Our generat... Generalized Category Discovery with Clustering Assignment Consistency: results and the number of categories simultaneously. Extensive experiments show that our method achieves state-of-the-art performance on three generic benchmarks and three fine-grained visual recognition datasets. Especially in the ImageNet-100 data set, our method significant...",
     "sources": [
       {
-        "arxiv_id": "1710.06288",
-        "title": "VPGNet: Vanishing Point Guided Network for Lane and Road Marking\n  Detection and Recognition",
+        "arxiv_id": "1410.6751",
+        "title": "Detecting Figures and Part Labels in Patents: Competition-Based\n  Development of Image Processing Algorithms",
         "category": "cs.CV",
-        "year": 2017,
+        "year": 2014,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.42422711849212646
       },
       {
-        "arxiv_id": "1212.2692",
-        "title": "Enhanced skin colour classifier using RGB Ratio model",
+        "arxiv_id": "1901.06763",
+        "title": "Pattern Generation Strategies for Improving Recognition of Handwritten\n  Mathematical Expressions",
         "category": "cs.CV",
-        "year": 2012,
+        "year": 2019,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.44221460819244385
       },
       {
-        "arxiv_id": "1501.02825",
-        "title": "A Survey on Recent Advances of Computer Vision Algorithms for Egocentric\n  Video",
+        "arxiv_id": "2310.1921",
+        "title": "Generalized Category Discovery with Clustering Assignment Consistency",
         "category": "cs.CV",
-        "year": 2015,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.45256930589675903
       },
       {
-        "arxiv_id": "1606.03237",
-        "title": "Survey on RGB, 3D, Thermal, and Multimodal Approaches for Facial\n  Expression Recognition: History, Trends, and Affect-related Applications",
+        "arxiv_id": "2506.04807",
+        "title": "MegaHan97K: A Large-Scale Dataset for Mega-Category Chinese Character Recognition with over 97K Categories",
         "category": "cs.CV",
-        "year": 2016,
-        "pub_status": "Preprint",
-        "distance": 0.125
+        "year": 2025,
+        "pub_status": "Published",
+        "distance": 0.4531882405281067
       },
       {
-        "arxiv_id": "1703.00832",
-        "title": "On the Reconstruction of Face Images from Deep Face Templates",
+        "arxiv_id": "2408.13031",
+        "title": "VFM-Det: Towards High-Performance Vehicle Detection via Large Foundation\n  Models",
         "category": "cs.CV",
-        "year": 2017,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.4540681838989258
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -652,47 +612,39 @@
   {
     "question_id": 14,
     "question": "What robustness and distribution-shift issues are discussed in machine learning generalization papers?",
-    "answer": "Adaptive Power System Emergency Control using Deep Reinforcement\n  Learning: Power system emergency control is generally regarded as the last safety net for grid security and resiliency. Existing emergency control schemes are usually designed off-line based on either the conceived \"worst\" case scenario or a few typical operation scenarios. These scheme... Generalized Topic Modeling: Recently there has been significant activity in developing algorithms with provable guarantees for topic modeling. In standard topic models, a topic (such as sports, business, or politics) is viewed as a probability distribution $\\vec a_i$ over words, and a document is generat... mixup: Beyond Empirical Risk Minimization: Large deep neural networks are powerful, but exhibit undesirable behaviors such as memorization and sensitivity to adversarial examples. In this work, we propose mixup, a simple learning principle to alleviate these issues. In essence, mixup trains a neural network on convex c...",
+    "answer": "Confidence-Based Model Selection: When to Take Shortcuts for\n  Subpopulation Shifts: Effective machine learning models learn both robust features that directly determine the outcome of interest (e.g., an object with wheels is more likely to be a car), and shortcut features (e.g., an object on a road is more likely to be a car). The latter can be a source of er... A Flat Minima Perspective on Understanding Augmentations and Model Robustness: Model robustness indicates a model's capability to generalize well on unforeseen distributional shifts, including data corruptions and adversarial attacks. Data augmentation is one of the most prevalent and effective ways to enhance robustness. Despite the great success of the... CFL: On the Use of Characteristic Function Loss for Domain Alignment in Machine Learning: Machine Learning (ML) models are extensively used in various applications due to their significant advantages over traditional learning methods. However, the developed ML models often underperform when deployed in the real world due to the well-known distribution shift problem...",
     "sources": [
       {
-        "arxiv_id": "1903.03712",
-        "title": "Adaptive Power System Emergency Control using Deep Reinforcement\n  Learning",
+        "arxiv_id": "2306.1112",
+        "title": "Confidence-Based Model Selection: When to Take Shortcuts for\n  Subpopulation Shifts",
         "category": "cs.LG",
-        "year": 2019,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.125
+        "distance": 0.3770197629928589
       },
       {
-        "arxiv_id": "1611.01259",
-        "title": "Generalized Topic Modeling",
+        "arxiv_id": "2505.24592",
+        "title": "A Flat Minima Perspective on Understanding Augmentations and Model Robustness",
         "category": "cs.LG",
-        "year": 2016,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.3794170022010803
       },
       {
-        "arxiv_id": "1710.09412",
-        "title": "mixup: Beyond Empirical Risk Minimization",
+        "arxiv_id": "2511.02148",
+        "title": "CFL: On the Use of Characteristic Function Loss for Domain Alignment in Machine Learning",
         "category": "cs.LG",
-        "year": 2017,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.38570713996887207
       },
       {
-        "arxiv_id": "1802.01528",
-        "title": "The Matrix Calculus You Need For Deep Learning",
+        "arxiv_id": "2202.08944",
+        "title": "Rethinking Machine Learning Robustness via its Link with the\n  Out-of-Distribution Problem",
         "category": "cs.LG",
-        "year": 2018,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "1901.04562",
-        "title": "Putting Fairness Principles into Practice: Challenges, Metrics, and\n  Improvements",
-        "category": "cs.LG",
-        "year": 2019,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.39844274520874023
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -702,47 +654,47 @@
   {
     "question_id": 15,
     "question": "What techniques are used for model efficiency, compression, and parameter reduction?",
-    "answer": "Entropy-Based Search Algorithm for Experimental Design: The scientific method relies on the iterated processes of inference and inquiry. The inference phase consists of selecting the most probable models based on the available data; whereas the inquiry phase consists of using what is known about the models to select the most releva... Committee-Based Sample Selection for Probabilistic Classifiers: In many real-world learning tasks, it is expensive to acquire a sufficient number of labeled examples for training. This paper investigates methods for reducing annotation cost by `sample selection'. In this approach, during training the learning program examines many unlabele... Breaking Instance-Independent Symmetries In Exact Graph Coloring: Code optimization and high level synthesis can be posed as constraint satisfaction and optimization problems, such as graph coloring used in register allocation. Graph coloring is also used to model more traditional CSPs relevant to AI, such as planning, time-tabling and sched...",
+    "answer": "Prune-then-Quantize or Quantize-then-Prune? Understanding the Impact of Compression Order in Joint Model Compression: What happens when multiple compression methods are combined-does the order in which they are applied matter? Joint model compression has emerged as a powerful strategy to achieve higher efficiency by combining multiple methods such as pruning and quantization. A central but un... Filter Pruning for Efficient CNNs via Knowledge-driven Differential\n  Filter Sampler: KDFS's effectiveness in compressing the base models on various datasets. For instance, the pruned ResNet-50 on ImageNet achieves $55.36\\%$ computation reduction, and $42.86\\%$ parameter reduction, while only dropping $0.35\\%$ Top-1 accuracy, significantly outperforming the sta... Pea-KD: Parameter-efficient and Accurate Knowledge Distillation on BERT: How can we efficiently compress a model while maintaining its performance? Knowledge Distillation (KD) is one of the widely known methods for model compression. In essence, KD trains a smaller student model based on a larger teacher model and tries to retain the teacher model'...",
     "sources": [
       {
-        "arxiv_id": "1008.4973",
-        "title": "Entropy-Based Search Algorithm for Experimental Design",
-        "category": "stat.ML",
-        "year": 2010,
+        "arxiv_id": "2603.18426",
+        "title": "Prune-then-Quantize or Quantize-then-Prune? Understanding the Impact of Compression Order in Joint Model Compression",
+        "category": "cs.AI",
+        "year": 2026,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.3610309958457947
       },
       {
-        "arxiv_id": "1106.022",
-        "title": "Committee-Based Sample Selection for Probabilistic Classifiers",
-        "category": "cs.AI",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.1111111111111111
-      },
-      {
-        "arxiv_id": "1109.2347",
-        "title": "Breaking Instance-Independent Symmetries In Exact Graph Coloring",
-        "category": "cs.AI",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.1111111111111111
-      },
-      {
-        "arxiv_id": "1211.6675",
-        "title": "Nonlinear Dynamic Field Embedding: On Hyperspectral Scene Visualization",
+        "arxiv_id": "2307.00198",
+        "title": "Filter Pruning for Efficient CNNs via Knowledge-driven Differential\n  Filter Sampler",
         "category": "cs.CV",
-        "year": 2012,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.37730544805526733
       },
       {
-        "arxiv_id": "1002.1157",
-        "title": "Establishment of Relationships between Material Design and Product\n  Design Domains by Hybrid FEM-ANN Technique",
-        "category": "cs.AI",
-        "year": 2010,
-        "pub_status": "Published",
-        "distance": 0.125
+        "arxiv_id": "2009.14822",
+        "title": "Pea-KD: Parameter-efficient and Accurate Knowledge Distillation on BERT",
+        "category": "cs.LG",
+        "year": 2020,
+        "pub_status": "Preprint",
+        "distance": 0.4071769118309021
+      },
+      {
+        "arxiv_id": "2207.00112",
+        "title": "Language model compression with weighted low-rank factorization",
+        "category": "cs.LG",
+        "year": 2022,
+        "pub_status": "Preprint",
+        "distance": 0.426449179649353
+      },
+      {
+        "arxiv_id": "1810.00597",
+        "title": "Taming VAEs",
+        "category": "stat.ML",
+        "year": 2018,
+        "pub_status": "Preprint",
+        "distance": 0.43006306886672974
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -752,47 +704,23 @@
   {
     "question_id": 16,
     "question": "Which reinforcement learning components are emphasized in cs.LG papers from 2022?",
-    "answer": "Lower Bounds for the Convergence of Tensor Power Iteration on Random\n  Overcomplete Models: Tensor decomposition serves as a powerful primitive in statistics and machine learning, and has numerous applications in problems such as learning latent variable models or mixture of Gaussians. In this paper, we focus on using power iteration to decompose an overcomplete rand... GLAN: A Graph-based Linear Assignment Network: Differentiable solvers for the linear assignment problem (LAP) have attracted much research attention in recent years, which are usually embedded into learning frameworks as components. However, previous algorithms, with or without learning strategies, usually suffer from the... Automated Reinforcement Learning: An Overview: Reinforcement Learning and, recently, Deep Reinforcement Learning are popular methods for solving sequential decision-making problems modeled as Markov Decision Processes. RL modeling of a problem and selecting algorithms and hyper-parameters require careful consideration, as...",
+    "answer": "Assessing Policy, Loss and Planning Combinations in Reinforcement\n  Learning using a New Modular Architecture: that the best combination of planning algorithm, policy, and loss function is heavily problem dependent. This result provides evidence that the proposed architecture, which is modular and reusable, is useful for reinforcement learning researchers who want to study new environm... Provable General Function Class Representation Learning in Multitask\n  Bandits and MDPs: While multitask representation learning has become a popular approach in reinforcement learning (RL) to boost the sample efficiency, the theoretical understanding of why and how it works is still limited. Most previous analytical works could only assume that the representation...",
     "sources": [
       {
-        "arxiv_id": "2211.03827",
-        "title": "Lower Bounds for the Convergence of Tensor Power Iteration on Random\n  Overcomplete Models",
-        "category": "cs.LG",
-        "year": 2022,
-        "pub_status": "Published",
-        "distance": 0.1111111111111111
-      },
-      {
-        "arxiv_id": "2201.02057",
-        "title": "GLAN: A Graph-based Linear Assignment Network",
+        "arxiv_id": "2201.02874",
+        "title": "Assessing Policy, Loss and Planning Combinations in Reinforcement\n  Learning using a New Modular Architecture",
         "category": "cs.LG",
         "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4928462505340576
       },
       {
-        "arxiv_id": "2201.05",
-        "title": "Automated Reinforcement Learning: An Overview",
+        "arxiv_id": "2205.15701",
+        "title": "Provable General Function Class Representation Learning in Multitask\n  Bandits and MDPs",
         "category": "cs.LG",
         "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2201.09653",
-        "title": "The Paradox of Choice: Using Attention in Hierarchical Reinforcement\n  Learning",
-        "category": "cs.LG",
-        "year": 2022,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
-      },
-      {
-        "arxiv_id": "2202.07005",
-        "title": "Continuously Generalized Ordinal Regression for Linear and Deep Models",
-        "category": "cs.LG",
-        "year": 2022,
-        "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.5299596786499023
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -802,47 +730,47 @@
   {
     "question_id": 17,
     "question": "What publication metadata signals indicate whether a paper is published or still a preprint?",
-    "answer": "Elicitation of Probabilities for Belief Networks: Combining Qualitative\n  and Quantitative Information: Although the usefulness of belief networks for reasoning under uncertainty is widely accepted, obtaining numerical probabilities that they require is still perceived a major obstacle. Often not enough statistical data is available to allow for reliable probability estimation.... \"Mind your p's and q's\": or the peregrinations of an apostrophe in 17th\n  Century English: If the use of the apostrophe in contemporary English often marks the Saxon genitive, it may also indicate the omission of one or more let-ters. Some writers (wrongly?) use it to mark the plural in symbols or abbreviations, visual-ised thanks to the isolation of the morpheme \"s... PCA 4 DCA: The Application Of Principal Component Analysis To The\n  Dendritic Cell Algorithm: As one of the newest members in the field of artificial immune systems (AIS), the Dendritic Cell Algorithm (DCA) is based on behavioural models of natural dendritic cells (DCs). Unlike other AIS, the DCA does not rely on training data, instead domain or expert knowledge is req...",
+    "answer": "Standardization of Post-Publication Code Verification by Journals is Possible with the Support of the Community: Reproducibility remains a challenge in machine learning research. While code and data availability requirements have become increasingly common, post-publication verification in journals is still limited and unformalized. This position paper argues that it is plausible for jou... Estimating the Causal Effect of Early ArXiving on Paper Acceptance: What is the effect of releasing a preprint of a paper before it is submitted for peer review? No randomized controlled trial has been conducted, so we turn to observational data to answer this question. We use data from the ICLR conference (2018--2022) and apply methods from c... The Pitfalls of Publishing in the Age of LLMs: Strange and Surprising\n  Adventures with a High-Impact NLP Journal: We show the fraught side of the academic publishing realm and illustrate it through a recent case study with an NLP journal.",
     "sources": [
       {
-        "arxiv_id": "1302.4943",
-        "title": "Elicitation of Probabilities for Belief Networks: Combining Qualitative\n  and Quantitative Information",
-        "category": "cs.AI",
-        "year": 2013,
+        "arxiv_id": "2601.07189",
+        "title": "Standardization of Post-Publication Code Verification by Journals is Possible with the Support of the Community",
+        "category": "cs.LG",
+        "year": 2026,
         "pub_status": "Preprint",
-        "distance": 0.2
+        "distance": 0.543578028678894
       },
       {
-        "arxiv_id": "1002.0479",
-        "title": "\"Mind your p's and q's\": or the peregrinations of an apostrophe in 17th\n  Century English",
+        "arxiv_id": "2306.13891",
+        "title": "Estimating the Causal Effect of Early ArXiving on Paper Acceptance",
         "category": "cs.CL",
-        "year": 2010,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.25
+        "distance": 0.5505154132843018
       },
       {
-        "arxiv_id": "1004.346",
-        "title": "PCA 4 DCA: The Application Of Principal Component Analysis To The\n  Dendritic Cell Algorithm",
-        "category": "cs.AI",
-        "year": 2010,
-        "pub_status": "Published",
-        "distance": 0.25
-      },
-      {
-        "arxiv_id": "1106.4578",
-        "title": "Propositional Independence - Formula-Variable Independence and\n  Forgetting",
-        "category": "cs.AI",
-        "year": 2011,
-        "pub_status": "Published",
-        "distance": 0.25
-      },
-      {
-        "arxiv_id": "1108.0155",
-        "title": "Reasoning in the OWL 2 Full Ontology Language using First-Order\n  Automated Theorem Proving",
-        "category": "cs.AI",
-        "year": 2011,
+        "arxiv_id": "2407.12026",
+        "title": "The Pitfalls of Publishing in the Age of LLMs: Strange and Surprising\n  Adventures with a High-Impact NLP Journal",
+        "category": "cs.CL",
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.25
+        "distance": 0.5577199459075928
+      },
+      {
+        "arxiv_id": "1709.09119",
+        "title": "Integration of Japanese Papers Into the DBLP Data Set",
+        "category": "cs.CL",
+        "year": 2017,
+        "pub_status": "Preprint",
+        "distance": 0.5627934336662292
+      },
+      {
+        "arxiv_id": "2508.19780",
+        "title": "Interestingness First Classifiers",
+        "category": "cs.LG",
+        "year": 2025,
+        "pub_status": "Preprint",
+        "distance": 0.5674616098403931
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -852,47 +780,47 @@
   {
     "question_id": 18,
     "question": "For cs.AI papers, what application domains are frequently mentioned in decision support, dialogue, or robotics?",
-    "answer": "Symbolic Decision Theory and Autonomous Systems: The ability to reason under uncertainty and with incomplete information is a fundamental requirement of decision support technology. In this paper we argue that the concentration on theoretical techniques for the evaluation and selection of decision options has distracted atte... Heart Disease Prediction System using Associative Classification and\n  Genetic Algorithm: Associative classification is a recent and rewarding technique which integrates association rule mining and classification to a model for prediction and achieves maximum accuracy. Associative classifiers are especially fit to applications where maximum accuracy is desired to a... Probabilistic Conflict Resolution in Hierarchical Hypothesis Spaces: Artificial intelligence applications such as industrial robotics, military surveillance, and hazardous environment clean-up, require situation understanding based on partial, uncertain, and ambiguous or erroneous evidence. It is necessary to evaluate the relative likelihood of...",
+    "answer": "IDs for AI Systems: AI systems are increasingly pervasive, yet information needed to decide whether and how to engage with them may not exist or be accessible. A user may not be able to verify whether a system has certain safety certifications. An investigator may not know whom to investigate whe... Responsible AI for General-Purpose Systems: Overview, Challenges, and A Path Forward: the RAI requirements for future general-purpose AI systems, and discuss how recent efforts in AI alignment, retrieval-augmented generation, reasoning enhancements, etc. fare along one or more of the desiderata. We believe that the goal of developing responsible general-purpose... Where can AI be used? Insights from a deep ontology of work activities: value. Most of the market value is used in information-based activities (72%), especially creating information (36%), and only 12% is used in physical activities. Interactive activities include both information-based and physical activities and account for 48% of AI market val...",
     "sources": [
       {
-        "arxiv_id": "1303.5716",
-        "title": "Symbolic Decision Theory and Autonomous Systems",
+        "arxiv_id": "2406.12137",
+        "title": "IDs for AI Systems",
         "category": "cs.AI",
-        "year": 2013,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4572352170944214
       },
       {
-        "arxiv_id": "1303.5919",
-        "title": "Heart Disease Prediction System using Associative Classification and\n  Genetic Algorithm",
+        "arxiv_id": "2601.13122",
+        "title": "Responsible AI for General-Purpose Systems: Overview, Challenges, and A Path Forward",
         "category": "cs.AI",
-        "year": 2013,
-        "pub_status": "Published",
-        "distance": 0.14285714285714285
+        "year": 2026,
+        "pub_status": "Preprint",
+        "distance": 0.4669231176376343
       },
       {
-        "arxiv_id": "1304.345",
-        "title": "Probabilistic Conflict Resolution in Hierarchical Hypothesis Spaces",
+        "arxiv_id": "2603.20619",
+        "title": "Where can AI be used? Insights from a deep ontology of work activities",
         "category": "cs.AI",
-        "year": 2013,
+        "year": 2026,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4782264232635498
       },
       {
-        "arxiv_id": "1502.05443",
-        "title": "Influence-Optimistic Local Values for Multiagent Planning --- Extended\n  Version",
+        "arxiv_id": "2210.00608",
+        "title": "Establishing Meta-Decision-Making for AI: An Ontology of Relevance,\n  Representation and Reasoning",
         "category": "cs.AI",
-        "year": 2015,
+        "year": 2022,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4830304980278015
       },
       {
-        "arxiv_id": "1502.05615",
-        "title": "Forgetting and consolidation for incremental and cumulative knowledge\n  acquisition systems",
+        "arxiv_id": "2411.0804",
+        "title": "The Universal PDDL Domain",
         "category": "cs.AI",
-        "year": 2015,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.4857569932937622
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -902,47 +830,15 @@
   {
     "question_id": 19,
     "question": "What multimodal research themes appear in 2023 papers on vision-language and video modeling?",
-    "answer": "Affective Faces for Goal-Driven Dyadic Communication: We introduce a video framework for modeling the association between verbal and non-verbal communication during dyadic conversation. Given the input speech of a speaker, our approach retrieves a video of a listener, who has facial expressions that would be socially appropriate... Roots and Requirements for Collaborative AIs: The vision of AI collaborators is a staple of mythology and science fiction, where artificial agents with special talents assist human partners and teams. In this dream, sophisticated AIs understand nuances of collaboration and human communication. The AI as collaborator dream... Federated and distributed learning applications for electronic health\n  records and structured medical data: A scoping review: Federated learning (FL) has gained popularity in clinical research in recent years to facilitate privacy-preserving collaboration. Structured data, one of the most prevalent forms of clinical data, has experienced significant growth in volume concurrently, notably with the wid...",
+    "answer": "Multimodal Large Language Models: A Survey: The exploration of multimodal language models integrates multiple data types, such as images, text, language, audio, and other heterogeneity. While the latest large language models excel in text-based tasks, they often struggle to understand and process other data types. Multi...",
     "sources": [
       {
-        "arxiv_id": "2301.10939",
-        "title": "Affective Faces for Goal-Driven Dyadic Communication",
-        "category": "cs.CV",
-        "year": 2023,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "2303.1204",
-        "title": "Roots and Requirements for Collaborative AIs",
+        "arxiv_id": "2311.13165",
+        "title": "Multimodal Large Language Models: A Survey",
         "category": "cs.AI",
         "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "2304.0731",
-        "title": "Federated and distributed learning applications for electronic health\n  records and structured medical data: A scoping review",
-        "category": "cs.LG",
-        "year": 2023,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "2304.09498",
-        "title": "Learning Robust Visual-Semantic Embedding for Generalizable Person\n  Re-identification",
-        "category": "cs.CV",
-        "year": 2023,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "2305.06586",
-        "title": "SemEval-2023 Task 2: Fine-grained Multilingual Named Entity Recognition\n  (MultiCoNER 2)",
-        "category": "cs.CL",
-        "year": 2023,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.4243432879447937
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -952,47 +848,47 @@
   {
     "question_id": 20,
     "question": "Which techniques are used to improve factuality, retrieval grounding, and hallucination control in language model papers?",
-    "answer": "Classifying informative and imaginative prose using complex networks: Statistical methods have been widely employed in recent years to grasp many language properties. The application of such techniques have allowed an improvement of several linguistic applications, which encompasses machine translation, automatic summarization and document class... Static and Dynamic Feature Selection in Morphosyntactic Analyzers: We study the use of greedy feature selection methods for morphosyntactic tagging under a number of different conditions. We compare a static ordering of features to a dynamic ordering based on mutual information statistics, and we apply the techniques to standalone taggers as... Clinical Text Prediction with Numerically Grounded Conditional Language\n  Models: Assisted text input techniques can save time and effort and improve text quality. In this paper, we investigate how grounded and conditional extensions to standard neural language models can bring improvements in the tasks of word prediction and completion. These extensions in...",
+    "answer": "PFME: A Modular Approach for Fine-grained Hallucination Detection and\n  Editing of Large Language Models: Large Language Models (LLMs) excel in fluency but risk producing inaccurate content, called \"hallucinations.\" This paper outlines a standardized process for categorizing fine-grained hallucination types and proposes an innovative framework--the Progressive Fine-grained Model E... Investigating Symbolic Triggers of Hallucination in Gemma Models Across HaluEval and TruthfulQA: Hallucination in Large Language Models (LLMs) is a well studied problem. However, the properties that make LLM intrinsically vulnerable to hallucinations have not been identified and studied. This research identifies and characterizes the key properties, allowing us to pinpoin... UFO: a Unified and Flexible Framework for Evaluating Factuality of Large\n  Language Models: Large language models (LLMs) may generate text that lacks consistency with human knowledge, leading to factual inaccuracies or \\textit{hallucination}. Existing research for evaluating the factuality of LLMs involves extracting fact claims using an LLM and verifying them agains...",
     "sources": [
       {
-        "arxiv_id": "1507.07826",
-        "title": "Classifying informative and imaginative prose using complex networks",
+        "arxiv_id": "2407.00488",
+        "title": "PFME: A Modular Approach for Fine-grained Hallucination Detection and\n  Editing of Large Language Models",
         "category": "cs.CL",
-        "year": 2015,
-        "pub_status": "Published",
-        "distance": 0.1111111111111111
+        "year": 2024,
+        "pub_status": "Preprint",
+        "distance": 0.3558080792427063
       },
       {
-        "arxiv_id": "1603.06503",
-        "title": "Static and Dynamic Feature Selection in Morphosyntactic Analyzers",
+        "arxiv_id": "2509.09715",
+        "title": "Investigating Symbolic Triggers of Hallucination in Gemma Models Across HaluEval and TruthfulQA",
         "category": "cs.CL",
-        "year": 2016,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.3603476285934448
       },
       {
-        "arxiv_id": "1610.0637",
-        "title": "Clinical Text Prediction with Numerically Grounded Conditional Language\n  Models",
+        "arxiv_id": "2402.1469",
+        "title": "UFO: a Unified and Flexible Framework for Evaluating Factuality of Large\n  Language Models",
         "category": "cs.CL",
-        "year": 2016,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.36526739597320557
       },
       {
-        "arxiv_id": "1704.07427",
-        "title": "Recognizing Descriptive Wikipedia Categories for Historical Figures",
+        "arxiv_id": "2403.19113",
+        "title": "FACTOID: FACtual enTailment fOr hallucInation Detection",
         "category": "cs.CL",
-        "year": 2017,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.37152785062789917
       },
       {
-        "arxiv_id": "1801.10293",
-        "title": "Paraphrase-Supervised Models of Compositionality",
+        "arxiv_id": "2502.13622",
+        "title": "REFIND at SemEval-2025 Task 3: Retrieval-Augmented Factuality\n  Hallucination Detection in Large Language Models",
         "category": "cs.CL",
-        "year": 2018,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.1111111111111111
+        "distance": 0.38271021842956543
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -1002,47 +898,47 @@
   {
     "question_id": 21,
     "question": "In one or two sentences, what fairness and bias mitigation techniques appear in AI decision-support papers?",
-    "answer": "Improving the Performance of maxRPC: Max Restricted Path Consistency (maxRPC) is a local consistency for binary constraints that can achieve considerably stronger pruning than arc consistency. However, existing maxRRC algorithms suffer from overheads and redundancies as they can repeatedly perform many constraint... Survey on Various Gesture Recognition Techniques for Interfacing\n  Machines Based on Ambient Intelligence: Gesture recognition is mainly apprehensive on analyzing the functionality of human wits. The main goal of gesture recognition is to create a system which can recognize specific human gestures and use them to convey information or for device control. Hand gestures provide a sep... Learning where to Attend with Deep Architectures for Image Tracking: We discuss an attentional model for simultaneous object tracking and recognition that is driven by gaze data. Motivated by theories of perception, the model consists of two interacting pathways: identity and control, intended to mirror the what and where pathways in neuroscien...",
+    "answer": "Defining bias in AI-systems: Biased models are fair models: The debate around bias in AI systems is central to discussions on algorithmic fairness. However, the term bias often lacks a clear definition, despite frequently being contrasted with fairness, implying that an unbiased model is inherently fair. In this paper, we challenge thi... Navigating Fairness Measures and Trade-Offs: In order to monitor and prevent bias in AI systems we can use a wide range of (statistical) fairness measures. However, it is mathematically impossible to optimize for all of these measures at the same time. In addition, optimizing a fairness measure often greatly reduces the... Getting Fairness Right: Towards a Toolbox for Practitioners: The potential risk of AI systems unintentionally embedding and reproducing bias has attracted the attention of machine learning practitioners and society at large. As policy makers are willing to set the standards of algorithms and AI techniques, the issue on how to refine exi...",
     "sources": [
       {
-        "arxiv_id": "1008.5189",
-        "title": "Improving the Performance of maxRPC",
+        "arxiv_id": "2502.1806",
+        "title": "Defining bias in AI-systems: Biased models are fair models",
         "category": "cs.AI",
-        "year": 2010,
+        "year": 2025,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.2659844160079956
       },
       {
-        "arxiv_id": "1012.0084",
-        "title": "Survey on Various Gesture Recognition Techniques for Interfacing\n  Machines Based on Ambient Intelligence",
+        "arxiv_id": "2307.08484",
+        "title": "Navigating Fairness Measures and Trade-Offs",
         "category": "cs.AI",
-        "year": 2010,
+        "year": 2023,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.2737894654273987
       },
       {
-        "arxiv_id": "1109.3737",
-        "title": "Learning where to Attend with Deep Architectures for Image Tracking",
+        "arxiv_id": "2003.0692",
+        "title": "Getting Fairness Right: Towards a Toolbox for Practitioners",
         "category": "cs.AI",
-        "year": 2011,
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.2849392890930176
       },
       {
-        "arxiv_id": "1205.2634",
-        "title": "The Temporal Logic of Causal Structures",
+        "arxiv_id": "2411.06624",
+        "title": "A Review of Fairness and A Practical Guide to Selecting Context-Appropriate Fairness Metrics in Machine Learning",
         "category": "cs.AI",
-        "year": 2012,
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.2996431589126587
       },
       {
-        "arxiv_id": "1210.567",
-        "title": "Typed Answer Set Programming and Inverse Lambda Algorithms",
+        "arxiv_id": "1909.00982",
+        "title": "Quantifying Infra-Marginality and Its Trade-off with Group Fairness",
         "category": "cs.AI",
-        "year": 2012,
+        "year": 2019,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.3014613389968872
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
@@ -1052,47 +948,47 @@
   {
     "question_id": 22,
     "question": "What reproducibility details are frequently reported in machine learning experiments?",
-    "answer": "Practical Bayesian Optimization of Machine Learning Algorithms: Machine learning algorithms frequently require careful tuning of model hyperparameters, regularization terms, and optimization parameters. Unfortunately, this tuning is often a \"black art\" that requires expert experience, unwritten rules of thumb, or sometimes brute-force sear... Understanding the Social Cascading of Geekspeak and the Upshots for\n  Social Cognitive Systems: Barring swarm robotics, a substantial share of current machine-human and machine-machine learning and interaction mechanisms are being developed and fed by results of agent-based computer simulations, game-theoretic models, or robotic experiments based on a dyadic communicatio... Experiments Using Belief Functions and Weights of Evidence incorporating\n  Statistical Data and Expert Opinions: This paper presents some ideas and results of using uncertainty management methods in the presence of data in preference to other statistical and machine learning methods. A medical domain is used as a test-bed with data available from a large hospital database system which co...",
+    "answer": "Reproducibility in machine learning for medical imaging: Reproducibility is a cornerstone of science, as the replication of findings is the process through which they become knowledge. It is widely considered that many fields of science are undergoing a reproducibility crisis. This has led to the publications of various guidelines i... The Fundamental Principles of Reproducibility: Reproducibility is a confused terminology. In this paper, I take a fundamental view on reproducibility rooted in the scientific method. The scientific method is analysed and characterised in order to develop the terminology required to define reproducibility. Further, the lite... Research Reproducibility as a Survival Analysis: There has been increasing concern within the machine learning community that we are in a reproducibility crisis. As many have begun to work on this problem, all work we are aware of treat the issue of reproducibility as an intrinsic binary property: a paper is or is not reprod...",
     "sources": [
       {
-        "arxiv_id": "1206.2944",
-        "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
+        "arxiv_id": "2209.05097",
+        "title": "Reproducibility in machine learning for medical imaging",
+        "category": "cs.CV",
+        "year": 2022,
+        "pub_status": "Preprint",
+        "distance": 0.3086525797843933
+      },
+      {
+        "arxiv_id": "2011.10098",
+        "title": "The Fundamental Principles of Reproducibility",
+        "category": "cs.LG",
+        "year": 2020,
+        "pub_status": "Preprint",
+        "distance": 0.35138338804244995
+      },
+      {
+        "arxiv_id": "2012.09932",
+        "title": "Research Reproducibility as a Survival Analysis",
         "category": "stat.ML",
-        "year": 2012,
+        "year": 2020,
         "pub_status": "Preprint",
-        "distance": 0.14285714285714285
+        "distance": 0.3535992503166199
       },
       {
-        "arxiv_id": "1111.6843",
-        "title": "Understanding the Social Cascading of Geekspeak and the Upshots for\n  Social Cognitive Systems",
-        "category": "cs.AI",
-        "year": 2011,
+        "arxiv_id": "2403.08438",
+        "title": "Reproducibility and Geometric Intrinsic Dimensionality: An Investigation\n  on Graph Neural Network Research",
+        "category": "cs.LG",
+        "year": 2024,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.37553656101226807
       },
       {
-        "arxiv_id": "1304.1519",
-        "title": "Experiments Using Belief Functions and Weights of Evidence incorporating\n  Statistical Data and Expert Opinions",
-        "category": "cs.AI",
-        "year": 2013,
+        "arxiv_id": "1810.0457",
+        "title": "Building a Reproducible Machine Learning Pipeline",
+        "category": "cs.LG",
+        "year": 2018,
         "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "1312.3903",
-        "title": "A Methodology for Player Modeling based on Machine Learning",
-        "category": "cs.AI",
-        "year": 2013,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
-      },
-      {
-        "arxiv_id": "1406.1231",
-        "title": "Multi-task Neural Networks for QSAR Predictions",
-        "category": "stat.ML",
-        "year": 2014,
-        "pub_status": "Preprint",
-        "distance": 0.16666666666666666
+        "distance": 0.3823944926261902
       }
     ],
     "model_used": "sentence-transformers/all-minilm-l12-v2",
